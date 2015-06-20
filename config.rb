@@ -62,6 +62,9 @@ after_configuration do
   sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+activate :relative_assets
+set :relative_links, true
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
