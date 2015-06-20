@@ -4,6 +4,7 @@
 // Comment out this import if you don't want to use normalize
 @import "normalize";
 @import "settings";
+@import "compass/css3";
 
 // Foundation by ZURB
 // foundation.zurb.com
@@ -12,7 +13,7 @@
 // Make sure the charset is set appropriately
 
 // Behold, here are all the Foundation components.
-// @import 'foundation/components/grid';
+@import 'foundation/components/grid';
 // @import 'foundation/components/accordion';
 // @import 'foundation/components/alert-boxes';
 // @import 'foundation/components/block-grid';
@@ -49,3 +50,38 @@
 @import 'foundation/components/type';
 // @import 'foundation/components/offcanvas';
 // @import 'foundation/components/visibility';
+
+
+.dual {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  z-index: -9999;
+}
+
+#left-pane {
+  background: $yellow;
+}
+
+#right-pane {
+  left: 50%;
+  background: $yellow-shadow;
+}
+
+.display-box {
+  height: rem-calc(300);
+  position: relative;
+  @include border-radius(rem-calc(25px));
+
+  &.left-side {
+    background-color: $yellow-shadow;
+  }
+
+  &.right-side {
+    background-color: $yellow;
+  }
+}
+
+#title {
+  text-align: center;
+}
