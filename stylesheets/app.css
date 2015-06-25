@@ -2018,6 +2018,24 @@ select {
     position: absolute;
     top: 10px;
     right: 20px; } }
+/* line 53, /Users/alan/dev/daniela/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+.inline-list {
+  list-style: none;
+  margin-left: -1.375rem;
+  margin-right: 0;
+  margin: 0 auto 1.0625rem auto;
+  overflow: hidden;
+  padding: 0; }
+  /* line 42, /Users/alan/dev/daniela/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+  .inline-list > li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin-left: 1.375rem; }
+    /* line 47, /Users/alan/dev/daniela/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
+    .inline-list > li > * {
+      display: block; }
+
 /* line 155, /Users/alan/dev/daniela/bower_components/foundation/scss/foundation/components/_type.scss */
 .text-left {
   text-align: left !important; }
@@ -2500,36 +2518,72 @@ blockquote p {
   /* line 461, /Users/alan/dev/daniela/bower_components/foundation/scss/foundation/components/_type.scss */
   h6 {
     font-size: 1rem; } }
-/* line 55, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico.ttf") format('truetype'); }
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/AmaticSC-Regular.ttf") format('truetype'); }
+@font-face {
+  font-family: "Amatic";
+  src: url("../fonts/Amatic-Bold.ttf") format('truetype');
+  font-weight: bold; }
+/* line 58, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
 .dual {
   position: fixed;
   width: 50%;
   height: 100%;
   z-index: -9999; }
 
-/* line 62, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+/* line 65, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
 #left-pane {
   background: #E8BD3B; }
 
-/* line 66, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+/* line 69, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
 #right-pane {
   left: 50%;
   background: #D8AC3D; }
 
-/* line 71, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+/* line 74, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
 .display-box {
   height: 18.75rem;
   position: relative;
   -moz-border-radius: 1.5625rem;
   -webkit-border-radius: 1.5625rem;
   border-radius: 1.5625rem; }
-  /* line 76, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+  /* line 79, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
   .display-box.left-side {
     background-color: #D8AC3D; }
-  /* line 80, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+  /* line 83, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
   .display-box.right-side {
     background-color: #E8BD3B; }
 
-/* line 85, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+/* line 88, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
 #title {
   text-align: center; }
+
+/* line 92, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+#nav-menu {
+  font-family: "Amatic";
+  font-weight: bold;
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  letter-spacing: 1rem;
+  overflow: visible;
+  word-break: break-all;
+  word-break: break-word;
+  width: 2.5rem; }
+  /* line 103, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+  #nav-menu .item {
+    height: 50%;
+    float: left;
+    margin: 0;
+    font-size: 1.875rem;
+    text-align: center;
+    background: #000000;
+    color: #FFFFFF; }
+    /* line 112, /Users/alan/dev/daniela/source/stylesheets/app.css.scss */
+    #nav-menu .item:hover {
+      background: #FFFFFF;
+      color: #000000; }
